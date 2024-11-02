@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    <title>opa beleza :-;</title>
+</head>
+
+<body class="index1">
+
+
+
+
+    <div class="login">
+        <form class="tela4">
+
+            <h1 class="login2">tela de login</h1>
+            <label for="email">user</label>
+            <input type="email" name="email" id="email" placeholder="user" required>
+            <br>
+            <label for="senha">senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="sua senha" required>
+            <br>
+            <button id="ID_DO_BOTAO" type="button">acessar</button>
+
+
+            <div class="login4">
+               
+               
+                <p class="login3">não tem conta?</p>
+                <div class="cad">
+                    <a class="cad2" href="cadastro.html">cadastre-se</a>
+
+                </div>
+            </div>
+
+    </div>
+    </form>
+    <script>
+    var botaoclique = document.getElementById("ID_DO_BOTAO");
+    var email1 = document.getElementById("email");
+    var senha1 = document.getElementById("senha");
+    
+    botaoclique.addEventListener("click",function(){
+        if(email1.value == ""|| senha1.value == ""){
+            alert("preencha os campos");
+        }else{
+            alert("login feito com sucesso");
+            window.location.href = "index.html";
+        }
+    });
+    </script>
+
+    <div class="sol">
+        todos os direitos reservados ao shozzi
+    </div>
+
+
+
+
+</body>

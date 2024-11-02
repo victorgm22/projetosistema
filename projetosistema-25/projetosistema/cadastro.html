@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="index1">
+    <div class="tela4">
+    <form >
+        <h1>tela de cadastro</h1>
+        <label for="nome">nome</label><br>
+        <input type="text" id="nome" name="nome" placeholder="digite seu nome completo"><br>
+
+        <label for="email">email:</label> <br>
+        <input type="email" name="email" id="email" placeholder="digite seu email"><br>
+        <br>
+
+        <label for="idade">idade</label> <br>
+        <input type="number" min="18" id="idade" name="idade" placeholder="digite sua idade"><br>
+        <br>
+        <label for="nascimento">data de nascimento</label><br>
+        <input type="date" id="nascimento" name="nascimento"> <br>
+
+        <br>
+        <label for="senha">senha:</label> <br>
+        <input type="password" name="senha" id="senha"><br>
+        <br>
+        <label for="senha">confirme sua senha:</label> <br>
+        <input type="password" name="senha" id="senha"><br>
+        <button onclick="location.href='index.html'" id="btncadastro1" type="submit">enviar</button> <br>
+
+    </form>
+</div>
+
+<script>
+    var botao = document.getElementById("btncadastro1");
+    btncadastro1.addEventListener("click",function () {
+    alert("informações enviadas para o sistema");
+    window.location.href = "index.html";
+});
+
+</script>  
+    
+
+
+
+</body>
+
+
+
+</html>
